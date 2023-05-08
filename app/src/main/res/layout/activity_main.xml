@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Registro de nómina"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/etNumEmpHL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Número de empleado"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/etNomHL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre de empleado"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/etPuestoHL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Puesto"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/etDiasHL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Diás trabajando"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tvBonoHL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bono"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnAltaHL"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:onClick="registroEmp"
+            android:text="Dar de alta" />
+
+        <Button
+            android:id="@+id/btnConsultaHL"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:onClick="consultaEmpelado"
+            android:text="Consultar" />
+
+        <Button
+            android:id="@+id/btnBajaHL"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:onClick="eliminarEmpleado"
+            android:text="Dar de Baja" />
+
+        <Button
+            android:id="@+id/btnEditarHL"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:onClick="modificarEmpleado"
+            android:text="Editar Registro" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
